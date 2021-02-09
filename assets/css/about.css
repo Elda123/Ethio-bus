@@ -1,0 +1,99 @@
+.logo1{
+    width: 25%; 
+    height: 35%;
+ }
+ .navbar-brand{
+     width: fit-content;
+     padding-left: 0px;
+     
+     text-align:end;
+ } 
+ .hum{
+     color: white;
+ }
+ .left1{
+     padding-right: 100px;
+ }
+ .nav-item{
+     margin-right: 10px;
+     padding-left: 30px;
+     color: white;
+ }
+ .footer{
+     color: white;
+     background-color: #343a40;
+     margin-top: 1300px;
+ }
+ .nav-link{
+     color: white;
+ }
+ .image {
+     height: 600px;
+     width: 100%;            
+ }
+ .carousel-control .icon-prev,
+ .carousel-control .icon-next{
+     position: absolute;
+   top: 50%;
+   z-index: 5;
+   display: inline-block;
+   color: lightblue;
+ }
+ .carousel-control .icon-prev {
+     right: 97%;
+   }
+   .carousel-control .icon-next {
+     left: 97%;
+   }
+   .carousel-caption {
+     font-size: xx-large;
+     padding-bottom: 250px;
+     color: white;
+ }
+ .logo2{
+     height: 5%;
+     width: 5%;
+ }
+ a{
+     color: white;
+ }
+ a:hover{
+     text-decoration: none;
+ }
+ .noBullet{
+     list-style-type:none
+ }
+ .fab{
+     color: lightblue;
+ }
+ 
+.row1{
+	width: 48%;
+	height: 500px;
+	float: left;
+}
+.row2{
+	width: 48%;
+	height: 500px;
+	float: right;
+}
+.row3{
+	width: 23%;
+	height: 50px;
+	float: left;
+}
+.row4{
+	width: 23%;
+	height: 50px;
+	float: right;
+}
+.row5{
+	width: 23%;
+	height: 50px;
+	float: right;
+}
+.row6{
+	width: 23%;
+	height: 50px;
+	float: right;
+}
