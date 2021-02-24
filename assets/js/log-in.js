@@ -39,7 +39,7 @@ function authenticate(event) {
             event.target.submit();
             
         } else {
-            showError.textContent = "Incorrect username or password entered.";
+            showError.textContent = "Incorrect username or password.";
 
         }
     }
