@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>doc</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+    integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+<link rel="stylesheet" href="./style.css">
+<link rel="stylesheet" href="assets/css/index.css">
+    
+</head>
+<body>
+  <header>
+    <nav class=" navbar navbar-expand-md  bg-dark sticky-top">
+      <a class="navbar-brand" href="index.html"><img src="./assets/images/logo2.PNG" class="image-responsive logo1"></a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#colNav">
+        <span><i class="fas fa-bars hum"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="colNav">
+        <ul class="navbar-nav mr-auto right1">
+          <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+          <li class="nav-item"><a href="service.html" class="nav-link">Services</a></li>
+          <li class="nav-item"><a href="about.html" class="nav-link">About us </a></li>
+          <li class="nav-item"><a href="contact.html" class="nav-link">Contact us</a></li>
+        </ul>
+        <ul class="navbar-nav ml-auto ">
+          <li class="nav-item "><a href="about.html" class="nav-link"><i class="fa fa-phone"><br>call us</i>
+            </a></li>
+          <li><a class="nav-item left1"><a href="log-in.html" class="nav-link">customer <br> &nbsp; login </a></li>
+          <li class="nav-item left1"></li><a href="registration.html">sign up</a></li>
+          <li><a href="admin-log-in.html"><img src="assets/images/admin.png" alt="" style="width: 30px; height: 30px; margin-top: 20px;"></a></li>
+        </ul>
+      </div>
+    </nav>
+    </header>
+  
+    <div class="container text-center">
+        <h1 class="">USER REGISTER</h1>
+
+    </div>
+    <div class="d-flex justify-content-center">
+    
+        <form class="w-50">
+           
+                <input type="text" class="form-control" readonly placeholder="ID" id="userid" >
+                <label >ID</label>
+              
+          
+            <label for="name">Name*</label>
+          
+            
+         
+              
+            
+              <input type="text" class="form-control" id="name" >
+              <label for="inputEmail4">Full name</label>
+       
+            
+            
+            
+              <label for="inputEmail4">Email*</label>
+              <input type="text" class="form-control" id="email" placeholder="email/username">
+           
+           
+              <label for="inputAddress2">phone number*</label>
+              <input type="text" class="form-control" id="phone">
+            
+          </form>
+        </div>
+        <div class="d-flex justify-content-center">
+            <button  class="btn btn-success" id="btn-create">Submit</button>
+            <button  class="btn btn-primary" id="btn-read">read</button>
+            <button  class="btn btn-warning" id="btn-update">update</button>
+          </div>
+<div class="container d-flex">
+    <table class="table table-striped">
+        <thead>
+          <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Full Name</th>
+            <th scope="col">Email</th>
+            <th scope="col">phone number</th>
+            <th scope="col">Edit</th>
+          
+          </tr>
+        </thead>
+        <tbody id="tbody">
+        
+        </tbody >
+      </table>
+</div>
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+<!--dexie api-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dexie/3.0.3/dexie.min.js" integrity="sha512-aEtNzq8X5E0ambgeM68H174SOXaANJ6wDqJ0TuVIx4R2J4fRdUA0nLzx0faA1mmViqb+r0VX7cOXkskxyJENUA==" crossorigin="anonymous"></script>
+
+<!--jquery.js-->
+<script src="./js/jquery.js"  type="module"></script>
+
+
+
+<footer class="footer">
+  <div class="row bg-dark">
+    <div class="col-md-4 col-sm-12 col-xs-12">
+      <div class="widget clearfix">
+        <div class="widget-title">
+          <img src="images/logos/logo-hosting-light.png" alt="">
+          <small>Ethio express bus service</small>
+        </div>
+        <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Illo, ullam nostrum. Accusantium,
+          libero ea, quae exercitationem explicabo sed aut minus dolorum nobis quo, natus ab ipsam beatae
+          aliquam voluptatibus! Totam.</p>
+        <p>Sed fermentum est vitae rhoncus molestie. Cum sociis natoque penatibus et magnis dis montes.
+        </p>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-4 col-xs-12">
+      <div class="widget clearfix">
+        <div class="widget-title">
+          <h3>Information Link</h3>
+        </div>
+        <ul class="footer-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#">Pricing</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Faq</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-sm-4 col-xs-12">
+      <div class="widget clearfix">
+        <div class="widget-title">
+          <h3> &nbsp; &nbsp; Contact Details</h3>
+        </div>
+
+        <ul class="footer-links">
+          <li><a href="mailto:#">info@Ethiobus.com</a></li>
+          <li><a href="#">www.Ethiobus.com</a></li>
+          <li>PO Box 16122 mexico Street Addis Ababa, Ethiopia</li>
+          <li>+251 113 8376 84</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="col-md-2 col-sm-3 col-xs-12">
+      <div class="widget clearfix">
+        <div class="widget-title">
+          <h3>Social</h3>
+        </div>
+        <ul class="footer-links noBullet">
+          <li><a href="#"><i class="fab fa-facebook"></i>&nbsp; &nbsp; 22.543 Likes</a></li>
+          <li><a href="#"><i class="fab fa-telegram"></i> &nbsp; &nbsp;128 Projects</a></li>
+          <li><a href="#"><i class="fab fa-instagram"></i>&nbsp; &nbsp;12.860 followers</a></li>
+          <li><a href="#"><i class="fab fa-twitter"></i> &nbsp; &nbsp;3331 Pins</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+</footer>
+
+</body>
+</html>

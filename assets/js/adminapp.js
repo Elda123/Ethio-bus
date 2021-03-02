@@ -3,7 +3,6 @@ var db;
 var admin = [
     { id: 1, userName: "abebe", password: "abebe"},
    
-   
 ];
 
 document.addEventListener('DOMContentLoaded', () => {
