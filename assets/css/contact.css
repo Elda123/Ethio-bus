@@ -43,3 +43,7 @@ a:hover{
 .fab{
     color: lightblue;
 }
+.container-fluid{
+    width: 50%;
+    margin-left: 500px;
+}
