@@ -1,5 +1,3 @@
-
-
 const form = document.getElementById('form');
 const username = document.getElementById('username');
 const password = document.getElementById('password');
@@ -27,7 +25,6 @@ form.addEventListener('submit', (e)=> {
                 let newUser = {
                     userName: username.value.trim(), 
                     password: password.value.trim(), 
-                    favorites: [], 
                     phoneNumber: phone.value.trim()
                 }
 
