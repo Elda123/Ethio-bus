@@ -32,7 +32,7 @@ form.addEventListener('submit', (e)=> {
                 addUserRequest.onsuccess = () => {
                     setTimeout(() => {
                         form.submit();
-                    }, 1000);
+                    }, 2000);
                 }
                 transaction.oncomplete = () => {
                     console.log('new user added');
@@ -82,9 +82,6 @@ function checkInputs(){
 
 function setErrorFor(input, message){
     const formControl  = input.parentElement;
-    const small = formControl.querySelector(`small`);
-
-    small.innerText = message;
     formControl.className = 'form-control error';
 }
 
