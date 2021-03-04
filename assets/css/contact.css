@@ -1,0 +1,49 @@
+.logo1{
+    width: 25%; 
+    height: 35%;
+ }
+ .navbar-brand{
+     width: fit-content;
+     padding-left: 0px;
+     
+     text-align:end;
+ } 
+ .hum{
+     color: white;
+ }
+ .left1{
+     padding-right: 100px;
+ }
+ .nav-item{
+     margin-right: 10px;
+     padding-left: 30px;
+     color: white;
+ }
+ .footer{
+     color: white;
+     background-color: #343a40;
+     margin-top: 4000px;
+ }
+ .nav-link{
+     color: white;
+ }
+ .logo2{
+    height: 5%;
+    width: 5%;
+}
+a{
+    color: white;
+}
+a:hover{
+    text-decoration: none;
+}
+.noBullet{
+    list-style-type:none
+}
+.fab{
+    color: lightblue;
+}
+.container-fluid{
+    width: 50%;
+    margin-left: 500px;
+}

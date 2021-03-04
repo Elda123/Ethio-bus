@@ -65,3 +65,24 @@ a:hover{
 .fab{
     color: lightblue;
 }
+
+
+
+#fromto{
+    margin-left: 5px;
+    border: solid 1px red;
+    margin-top: 4px;
+    width: 30%;
+    height: fit-content;
+    background-color: #0175c0;
+    
+}
+.to{
+    margin-left: 23px;
+}
+.txt{
+   color:white;
+}
+.findjourney{
+    background-color: yellowgreen;
+}
