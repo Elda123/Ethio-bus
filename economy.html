@@ -4,7 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/css/bootstrap-datepicker3.css" rel="stylesheet" id="bootstrap-css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+
+  
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
     integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
@@ -40,8 +45,8 @@
     </ul>
   </div>
 </nav>
-
-
+<body>
+	
 <div class="ya container-fluid">
     <div class="row">
     <div class="col-md-6 col-sm-6 col-xs-12" id="box1">
@@ -96,8 +101,40 @@
                     <input class="input-field" type="text"> 
                     <i class="fa fa-bus icon"></i> 
                     <input class="input-field" type="text"> 
-                    <i class="fa fa-calendar icon"></i> 
-                    <input class="input-field" type="text"> 
+                    <div class="container">
+		
+                      <div class="row">
+                            <div class='col-sm-6'>
+                              <form>
+                                  <div class="form-group">
+                                      <div class='input-group date' id='datepicker'>
+                                          <input type='text' class="form-control" />
+                                          <span class="input-group-addon">
+                                              <span class="glyphicon glyphicon-calendar"></span>
+                                          </span>
+                                      </div>
+                                  </div>
+                              </form>
+                            </div>
+                        </div>
+                    </div>
+                    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.7.1/js/bootstrap-datepicker.min.js"></script>
+                    <script >
+                        $(function () {
+                            $('#datepicker').datepicker({
+                                format: "dd/mm/yyyy",
+                                autoclose: true,
+                                todayHighlight: true,
+                              showOtherMonths: true,
+                              selectOtherMonths: true,
+                              autoclose: true,
+                              changeMonth: true,
+                              changeYear: true,
+                              orientation: "button"
+                            });
+                        });
+                    </script>
+                  
                      
                 </div> 
                 <div class="btn"><button >select</button></div>
@@ -133,7 +170,7 @@
             </div>
             <ul class="footer-links">
               <li><a href="#">Home</a></li>
-              <li><a href="#"></a></li>
+              <li><a href="service.html">Service</a></li>
               <li><a href="#">Pricing</a></li>
               <li><a href="#">About</a></li>
               <li><a href="#">Faq</a></li>
